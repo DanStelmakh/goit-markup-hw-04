@@ -100,7 +100,9 @@ img{
 
 .features-icon-bg{
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
     background-color: var(--background-secondary);
     width: 270px;
     height: 120px;
@@ -165,12 +167,42 @@ img{
 .social{
     display: flex;
     height: 44px;
-    
-   
-    
+
+}
+/* Социальные сети */
+.social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+.social-link{
+display: flex;
+width: 44px;
+height: 44px;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background-color:var(--background-color);
+color: var(--social-link-color);
+
 }
 
-    
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+
+
+.social-item + .social-item{
+    margin-left: 10px;
+}
 
 
 
@@ -219,14 +251,26 @@ color: var(--primary-button-color);
 }
 
 .client-item{
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--social-link-color);
     width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
-
+.client-item:hover,
+.client-item:focus{
+    color: var(--accent-color);
 }
 
 .client-item + .client-item{
     margin-left: 30px;
+}
+.client-icon{
+    fill: currentColor;
 }
 
