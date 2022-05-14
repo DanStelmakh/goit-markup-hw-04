@@ -21,10 +21,12 @@
     background-color: var(--background-secondary);
     font-family: inherit;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.88;
     cursor: pointer;
     border-radius: 4px;
     border-color: transparent;
+    padding: 6px 22px;
 }
 .section .button:hover, .section .button:focus{
     color: var(--primary-button-color);
@@ -59,13 +61,24 @@
 }
 .list-link{
     text-decoration: none;
+    display: block;
 }
+
+
+
+
+
+.list-link:hover,
+.list-link:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .gallery .item{
     margin-right: 30px;
     margin-bottom: 30px;
 
     background:var(--background-color);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 .gallery .item:nth-child(3n){
     margin-right: 0px;
@@ -83,7 +96,7 @@
     padding-left: 24px;
     padding-right: 24px;
 
-    /* border-bottom-style: solid;
+    border-bottom-style: solid;
     border-bottom-color:var(--border-color);
     border-bottom-width: 1px;
 
@@ -93,7 +106,7 @@
 
     border-right-style: solid;
     border-right-color: var(--border-color);
-    border-right-width: 1px; */
+    border-right-width: 1px;
 
     
 }
@@ -103,4 +116,7 @@
 
 .name-hidden{
     visibility: hidden;
+}
+.portfolio-img{
+    display: block;
 }

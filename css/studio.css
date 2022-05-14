@@ -153,6 +153,7 @@ img{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
     
 }
 .team-section{
@@ -174,7 +175,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 16px;
+    
 }
 .social-link{
 display: flex;
@@ -245,12 +246,12 @@ color: var(--primary-button-color);
 
 .client-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
 
-.client-item{
+.client-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,9 +263,10 @@ color: var(--primary-button-color);
     border-radius: 4px;
 }
 
-.client-item:hover,
-.client-item:focus{
+.client-link:hover,
+.client-link:focus{
     color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .client-item + .client-item{
@@ -272,5 +274,6 @@ color: var(--primary-button-color);
 }
 .client-icon{
     fill: currentColor;
+   
 }
 
